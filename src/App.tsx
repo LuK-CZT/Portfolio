@@ -1,21 +1,27 @@
-import Contact from './components/contact'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Intro from './components/intro'
-import Projects from './components/projects'
-import Timeline from './components/TImeline'
+import Intro from './components/Intro'
+import Projects from './components/Projects'
+import Timeline from './components/Timeline'
+import {ThemeProvider} from 'next-themes'
+import ThemeBtn from './components/ThemeBtn'
+
 
 function App() {
 
   return (
-    <div className='App'>
-      <div className="max-w-5xl w-11/12 mx-auto">
-        <Intro/>
-        <Projects/>
-        <Timeline/>
-        <Contact/>
-        <Footer/>
+    <ThemeProvider enableSystem={true} attribute='class'>
+      <div className='App h-screen'>
+        <ThemeBtn/>
+        <div className="max-w-7xl w-11/12 mx-auto ">
+          <Intro/>
+          <Projects/>
+          {/* <Timeline/>
+          <Contact/>
+          <Footer/> */}
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   )
 }
 

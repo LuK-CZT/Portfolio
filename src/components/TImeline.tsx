@@ -1,7 +1,14 @@
+
+
+
 const Timeline = () => {
     return (
-        <div></div>
+        <div>
+
+            times
+        </div>
     )
 }
+
 
 export default Timeline
