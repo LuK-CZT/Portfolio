@@ -3,7 +3,7 @@
 const Contact = () => {
     return (
         <div>
-            caca
+            contact
         </div>
     )
 }

@@ -16,9 +16,9 @@ function App() {
         <div className="max-w-7xl w-11/12 mx-auto ">
           <Intro/>
           <Projects/>
-          {/* <Timeline/>
+          <Timeline/>
           <Contact/>
-          <Footer/> */}
+          <Footer/>
         </div>
       </div>
     </ThemeProvider>
